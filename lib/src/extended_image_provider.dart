@@ -25,7 +25,7 @@ mixin ExtendedImageProvider<T extends Object> on ImageProvider<T> {
     if (imageCacheName != null) {
       return imageCaches.putIfAbsent(imageCacheName!, () => ImageCache());
     } else {
-      return PaintingBinding.instance!.imageCache!;
+      return PaintingBinding.instance.imageCache!;
     }
   }
 
